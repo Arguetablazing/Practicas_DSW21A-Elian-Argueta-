@@ -1,0 +1,10 @@
+
+ fun main(){
+   val  arreglo = arrayOf(4,7,8,9,7)
+ 
+ var suma = 0
+for (numero in arreglo){
+    suma+=numero
+     }
+println("El promedio de los 5 estudiantes es:"+suma/5)
+ }
