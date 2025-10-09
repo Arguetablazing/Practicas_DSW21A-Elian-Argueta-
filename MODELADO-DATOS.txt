@@ -1,0 +1,43 @@
+/*data class Producto(
+    val id: Int,
+    val nombre: String,
+    val marca: String,
+    val precio: Double,
+    val stock: Int,
+    val codigoDeBarra: String?,
+    val fechaVencimiento: String
+)
+
+fun main() {
+        val product1 = Producto(1, "Zapato", "Nike", 35.00, 10, "2347498793L","2025/9/10")
+        val product2 = Producto(2, "Jugo", "Petit", 1.00, 10, "2347498793L","2025/9/11")
+        val product3 = Producto(3, "camisa", "Nike", 35.00, 10, "2347498793L","2025/9/10")
+        
+        val listProducts = listOf(
+            Producto(1, " Zapato", " Nike", 35.00, 10, " 2347498793L"," 2025/9/10"),
+            Producto(2, " Jugo", " Petit", 1.00, 10, " 2347498793L"," 2025/9/11"),
+            Producto(3, " camisa", " Nike", 35.00, 10, " 2347498793L", " 2025/9/10")     
+        )
+        println(listProducts[2])
+ 
+}
+*/
+data class Direccion(
+ val Departamento: String,
+    val municipio: String,
+    val distrito: String,
+    val complemento: String
+)
+data class Estudiante(
+    val id: Int,
+    val nombre: String,
+    val carrera: String,
+    val materia: String,
+    val edad: Int,
+    val direccion: Direccion
+)
+
+fun main(){
+    val student = Estudiante(1,"Elian","DSW21A","Movil", 22, Direccion("La Paz","La Paz este","Zacatecoluca","ITCA"))
+    println(student)
+}
